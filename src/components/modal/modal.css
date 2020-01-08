@@ -1,0 +1,24 @@
+.modal{
+  position: absolute;
+  z-index: 4000;
+  width: calc(100% - 230px);
+  height: 95vh;
+  margin: auto 15px auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  box-shadow: 1px 1px 11px 1px #0000004a;
+}
+.close-modal{
+  padding: 10px 20px;
+  display: block;
+  font-size: 26px;
+  color: #e45d5d;
+  cursor: pointer;
+}
+.modal .content{
+  padding: 30px;
+}

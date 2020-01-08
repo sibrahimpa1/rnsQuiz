@@ -1,0 +1,86 @@
+.header{
+  width: 150px;
+  position: absolute;
+  height: 100vh;
+  z-index: 220;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 10%;
+    border: 34px solid #f97777;
+    left: 160%;
+    transform: rotate(39deg);
+    z-index: -1;
+  }
+  .content{
+    position: relative;
+    z-index: 200;
+    height: 100%;
+    padding: 0 20px;
+    &::after{
+      font-size: 115px;
+      content: "QUIZ";
+      position: absolute;
+      color: #21214c8c;
+      writing-mode: vertical-lr;
+      -webkit-text-orientation: sideways;
+      transform: rotate(180deg) rotate(50deg);
+      bottom: 0px;
+      left: 70%;
+      line-height: 55px;
+      font-weight: 300;
+      font-family: 'Luckiest Guy', cursive;
+    }
+  }
+  .logo{
+    padding: 0 0 20px;
+    margin: 20px 0 100px;
+    img{
+      width: 120px;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+  h1{
+    color: white;
+  }
+  ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      margin: 10px 0;
+      font-size: 17px;
+      color: white;
+      span{
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      button{
+        margin: 10px 0;
+        font-size: 17px;
+        color: white; 
+        font-family: 'Acme', sans-serif;
+      }
+      .fa{
+        color: #ffd459;
+        font-size: 23px;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .jokers button{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding: 0;
+  }
+  
+}
+
