@@ -3,22 +3,34 @@ import './App.scss';
 import {Header} from './components/header/header';
 import {Start} from './components/start/start';
 import {Modal} from './components/modal/modal';
+import QuestionsWrap from './components/questionsWrap/questionsWrap';
 
 class App extends Component{
   constructor(){
     super();
     this.state = {
       showModal: false,
+      quizStarted: false,
       modalNumberValue: -1,
-      jokerModal: {
-        modalText: 'senka1'
-      }
+      modalOpened: 0,
+      modals: [
+        {
+          modalText: 'upute za jokereeee'
+        },
+        {
+          modalText: 'pravila igrice'
+        }
+      ]
     }
   }
-  _handleShowModal = (modalNumberValue) => {
+  _handleShowModal = (modalType) => {
+    var modalOpened;
+    if(modalType === 'jokersModal') modalOpened = 0;
+    else modalOpened = 1;
+
     this.setState({
-      modalNumberValue: modalNumberValue,
-      showModal: true
+      showModal: true,
+      modalOpened: modalOpened
     })
   }
   _handleCloseModal = () => {
@@ -27,23 +39,37 @@ class App extends Component{
       showModal: false
     })  
   }
+  _startQuiz = () => {
+    this.setState({
+      quizStarted: !this.state.quizStarted
+    })
+  }
+
   render(){
-    const {showModal, modalNumberValue, jokerModal} = this.state;
+    const {showModal, modals, quizStarted, modalOpened} = this.state;
     return (
       <div className="app">
+
         { showModal && 
           <Modal 
             modalVisible={showModal} 
-            modalData={jokerModal} 
+            modalData={modals[modalOpened]} 
             closeModal={this._handleCloseModal}/>
         }
+
         <Header showModal={this._handleShowModal}/>
         <div className="app__content">
-          <Start/>
+          { !quizStarted &&
+            <Start runQuiz={this._startQuiz}/>
+          }
+          { quizStarted &&
+            <QuestionsWrap/>
+          }
         </div>
+
       </div>
     );
   }
-}
 
+}
 export default App;

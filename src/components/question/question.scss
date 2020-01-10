@@ -1,0 +1,66 @@
+.question{
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    max-width: 80%;
+    margin: auto;
+    color: #2c2c5c;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content{
+    max-width: 70%;
+    margin: 40px auto 0;
+    .people{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      img{
+        width: 230px;
+        height: 230px;
+      }
+    }
+    .items-list{
+      padding: 50px 0 0;
+      display: table;
+      margin: auto;
+      counter-reset: section;
+      .text{
+        font-size: 23px;
+        margin: 0 0 20px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        background: #f5f5f5;
+        color: #2b2c5b;
+        padding: 8px 80px;
+        border-radius: 23px;
+        border: 0px solid #d4d4d4;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        &::before{
+          content: counter(section);
+          counter-increment: section;
+          position: absolute;
+          left: 0;
+          background: #5bc6ce;
+          color: white;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          height: 100%;
+          top: 0;
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Acme";
+        }
+      }
+    }
+  }
+  &.type1{
+
+  }
+}
