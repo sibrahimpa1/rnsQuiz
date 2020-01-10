@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67dc78aa9c263d9d24c1ba9abd1e850e",
+    "revision": "070981e1cffe03b039bd3026c541180c",
     "url": "/rnsQuiz/index.html"
   },
   {
-    "revision": "ed5c694494733af2d1aa",
-    "url": "/rnsQuiz/static/css/main.be20bd3a.chunk.css"
+    "revision": "e91fdba25923d0ebd275",
+    "url": "/rnsQuiz/static/css/main.03d2e7d1.chunk.css"
   },
   {
     "revision": "4f124ca3bd640f24ab31",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rnsQuiz/static/js/2.e35f8649.chunk.js.LICENSE"
   },
   {
-    "revision": "ed5c694494733af2d1aa",
+    "revision": "e91fdba25923d0ebd275",
     "url": "/rnsQuiz/static/js/main.6b4c40f2.chunk.js"
   },
   {
