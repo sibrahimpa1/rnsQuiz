@@ -12,6 +12,7 @@ class QuestionsWrap extends Component{
       questionNumber: 1,
       previousDisabled: true,
       nextDisabled: false,
+      answersVisible: false,
       questions: [
         {
           id: 0,
@@ -72,6 +73,18 @@ class QuestionsWrap extends Component{
           ]
         }
       ],
+      answers: [
+        {
+          id: 0,
+          title: 'Imena likova',
+          answer: ['Neki lik', 'Neki drugi lik', 'Opet neki lik', 'Sad neki opet lik', 'Ime lika']
+        },
+        {
+          id: 1,
+          title: 'Ispravan redoslijed',
+          answer: ['Odgovor 1', 'Odgovor 2', 'Odgovor 3', 'Odgovor 4', 'Odgovor 5']
+        }
+      ],
       numberOfQuestions: 2
     }
   }
@@ -105,7 +118,8 @@ class QuestionsWrap extends Component{
       questionNumber: this.state.questionNumber + 1,
       questions: questionsTemp,
       nextDisabled: isLastActive,
-      previousDisabled: isZeroActive
+      previousDisabled: isZeroActive,
+      answersVisible: false 
     })
   }
 
@@ -136,14 +150,22 @@ class QuestionsWrap extends Component{
       questionNumber: this.state.questionNumber - 1,
       questions: questionsTemp,
       previousDisabled: isZeroActive,
-      nextDisabled: isLastActive
+      nextDisabled: isLastActive,
+      answersVisible: false 
     })
   }
-
+  _showAnswers = () => {
+    this.setState({
+      answersVisible: !this.state.answersVisible 
+    })
+  }
   _renderQuestion = (question) => {
     var questionObject = this.state.questions[question];
+    var answersObject = this.state.answers[question];
+    const {answersVisible} = this.state;
+
     return(
-      <Question questionData={questionObject}/>
+      <Question questionData={questionObject} answersData={answersObject} answersVisible={answersVisible} closeAnwsers={this._showAnswers}/>
     )
   }
 
@@ -169,6 +191,8 @@ class QuestionsWrap extends Component{
         <div className="questions-nav">
           <button className="btn btn-red" disabled={previousDisabled} onClick={(e) => this._backToPrev()}>Previous</button>
           <button className="btn btn-blue" disabled={nextDisabled} onClick={(e) => this._moveToNext()}>Next</button>
+
+          <button className="circle-btn" onClick={(e) => this._showAnswers()}><i className="fa fa-question-circle"></i></button>
         </div>
       </div>
     </div>  

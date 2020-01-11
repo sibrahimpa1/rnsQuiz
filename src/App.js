@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+import Logo from './img/logo.svg';
 import {Header} from './components/header/header';
 import {Start} from './components/start/start';
 import {Modal} from './components/modal/modal';
@@ -49,6 +50,12 @@ class App extends Component{
     const {showModal, modals, quizStarted, modalOpened} = this.state;
     return (
       <div className="app">
+
+        <div className="mobileOverlay">
+          <div className="logo"><img src={Logo} alt="Logo"/></div>
+          <div className="text"> Sry <br/> desktop only <br/></div>
+          <i className="fas fa-poo"></i>
+        </div>
 
         { showModal && 
           <Modal 

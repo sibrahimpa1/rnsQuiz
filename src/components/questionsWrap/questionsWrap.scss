@@ -63,11 +63,18 @@
       height: 0;
       border-top: 220px solid transparent;
       border-bottom: 180px solid transparent;
-      border-left: 260px solid #b2f9ec26;
-      top: -20px;
+      border-left: 260px solid #1b42d014;
+      top: -230px;
       right: 60px;
       transform: rotate(78deg);
       z-index: -1;
     }
+  }
+  .circle-btn{
+    padding: 10px;
+    font-size: 50px;
+    color: #3b3a70;
+    position: absolute;
+    right: 0;
   }
 }

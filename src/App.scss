@@ -33,5 +33,40 @@
       z-index: 1;
     }
   }
+  .mobileOverlay{
+    background: rgb(60,60,116);
+    background: linear-gradient(90deg, rgba(60,60,116,1) 0%, rgba(42,42,63,1) 100%);
+    position: absolute;
+    flex-wrap: wrap;
+    z-index: 8000;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .text{
+      width: 100%;
+    }
+    .logo{
+      width: 100px;
+      height: auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .app__content, header{
+      display: none;
+    }
+    .mobileOverlay{
+      display: flex;
+    }
+  }
 }
 

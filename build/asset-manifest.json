@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rnsQuiz/static/css/main.03d2e7d1.chunk.css",
-    "main.js": "/rnsQuiz/static/js/main.6b4c40f2.chunk.js",
-    "main.js.map": "/rnsQuiz/static/js/main.6b4c40f2.chunk.js.map",
+    "main.css": "/rnsQuiz/static/css/main.751e4e58.chunk.css",
+    "main.js": "/rnsQuiz/static/js/main.4f93e9a8.chunk.js",
+    "main.js.map": "/rnsQuiz/static/js/main.4f93e9a8.chunk.js.map",
     "runtime-main.js": "/rnsQuiz/static/js/runtime-main.1d29a667.js",
     "runtime-main.js.map": "/rnsQuiz/static/js/runtime-main.1d29a667.js.map",
-    "static/js/2.e35f8649.chunk.js": "/rnsQuiz/static/js/2.e35f8649.chunk.js",
-    "static/js/2.e35f8649.chunk.js.map": "/rnsQuiz/static/js/2.e35f8649.chunk.js.map",
+    "static/js/2.1a3af42a.chunk.js": "/rnsQuiz/static/js/2.1a3af42a.chunk.js",
+    "static/js/2.1a3af42a.chunk.js.map": "/rnsQuiz/static/js/2.1a3af42a.chunk.js.map",
     "index.html": "/rnsQuiz/index.html",
-    "precache-manifest.adcae5bb3c5bad7cbd9b30d86adecad6.js": "/rnsQuiz/precache-manifest.adcae5bb3c5bad7cbd9b30d86adecad6.js",
+    "precache-manifest.b2b89ce62c9a04e3c8d41842545fbb99.js": "/rnsQuiz/precache-manifest.b2b89ce62c9a04e3c8d41842545fbb99.js",
     "service-worker.js": "/rnsQuiz/service-worker.js",
-    "static/css/main.03d2e7d1.chunk.css.map": "/rnsQuiz/static/css/main.03d2e7d1.chunk.css.map",
-    "static/js/2.e35f8649.chunk.js.LICENSE": "/rnsQuiz/static/js/2.e35f8649.chunk.js.LICENSE",
+    "static/css/main.751e4e58.chunk.css.map": "/rnsQuiz/static/css/main.751e4e58.chunk.css.map",
+    "static/js/2.1a3af42a.chunk.js.LICENSE": "/rnsQuiz/static/js/2.1a3af42a.chunk.js.LICENSE",
     "static/media/logo.svg": "/rnsQuiz/static/media/logo.9043c833.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1d29a667.js",
-    "static/js/2.e35f8649.chunk.js",
-    "static/css/main.03d2e7d1.chunk.css",
-    "static/js/main.6b4c40f2.chunk.js"
+    "static/js/2.1a3af42a.chunk.js",
+    "static/css/main.751e4e58.chunk.css",
+    "static/js/main.4f93e9a8.chunk.js"
   ]
 }
